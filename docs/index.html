@@ -1,11 +1,191 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfólio - EDUARDO DA SILVA MACHADO</title>
-</head>
-<body>
-    <h1>Bem vindo ao Portfólio de EDUARDO DA SILVA MACHADO</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo Machado</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonte Supreme do Fontshare -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=supreme@400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo font-supreme-bold">Eduardo Machado</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Seções -->
+    <section id="home">
+      <div class="icons">
+        <p class="font-supreme-bold">Contato</p>
+        <div class="div-icons" data-tooltip="São José dos Campos - SP">
+          <i class="lucide" data-lucide="map-pin"></i>
+        </div>
+        <div class="div-icons" data-tooltip="eduardo.silvamachado07@gmail.com">
+          <i class="lucide" data-lucide="mail"></i>
+        </div>
+        <div class="div-icons" data-tooltip="(12) 98850-3575">
+          <i class="lucide" data-lucide="smartphone"></i>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="img-profile">
+          <img src="assets/perfil.jpg" alt="image profile" />
+        </div>
+      </div>
+
+      <div class="icons">
+        <p class="font-supreme-bold">Redes Sociais</p>
+        <a
+          href="https://github.com/EduMachado07"
+          target="_blank"
+          class="div-icons"
+          data-tooltip="EduMachado07"
+        >
+          <i class="lucide" data-lucide="github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eduardo-machado-dev/"
+          target="_blank"
+          class="div-icons"
+          data-tooltip="www.linkedin.com/in/eduardo-machado-dev"
+        >
+          <i class="lucide" data-lucide="linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/du_machdo/"
+          target="_blank"
+          class="div-icons"
+          data-tooltip="@du_machdo"
+        >
+          <i class="lucide" data-lucide="instagram"></i>
+        </a>
+
+        <div class="icons" style="margin-top: 1rem">
+          <p class="font-supreme-bold">Currículo</p>
+          <a
+            href="assets/my_curriculo.pdf"
+            target="_blank"
+            class="div-icons"
+            data-tooltip="Baixar Currículo"
+          >
+            <i class="lucide" data-lucide="file"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <p class="font-supreme">Olá, meu nome é Eduardo Machado!</p>
+      <h1 class="font-supreme-bold">
+        Desenvolvedor Full Stack Apaixonado Pela Tecnologia
+      </h1>
+      <p class="font-supreme">
+        Tenho 18 anos e sou um Desenvolvedor Full Stack apaixonado por
+        tecnologia e pelo seu impacto na vida das pessoas. Gosto de criar
+        projetos com foco em experiências de usuário dinâmicas, com interfaces
+        limpas, modernas e funcionais. Desde o primeiro contato com o
+        JavaScript, me encantei pela linguagem e venho explorando cada vez mais
+        seu potencial no desenvolvimento de soluções web.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2 class="font-supreme-bold">Projetos</h2>
+      <section class="projects">
+        <div class="card">
+          <img src="assets/img_EtecJobs.png" alt="Projeto 2" />
+          <div class="card-content">
+            <h3>Etec Jobs</h3>
+            <div class="tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Escolar</span>
+            </div>
+            <p class="description">
+              Aplicação mobile desenvolvida durante um evento de Hackathon organizado pelos professores da intuição de ensino da ETEC. Para o desafio foi fornecido uma API que consulta as vagas enviadas pelas empresas, e tinha como objetivo principal, criar um aplicativo para permitir a visaulização dessas vagas sejam elas emprego, estágio ou jovem aprendiz.
+            </p>
+            <div class="footer">
+              <span>2024</span>
+              <span>Saber mais</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="assets/img_Fatec_1sem.png" alt="Projeto 3" />
+          <div class="card-content">
+            <h3>Grade de Horários - Fatec</h3>
+            <div class="tags">
+              <span class="tag">Full Stack</span>
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <p class="description">
+              O projeto consiste em um sistema web desenvolvido para facilitar a visualização dos horários de aula da comunidade acadêmica. A plataforma permite a consulta por curso, turma, ambiente (como salas e laboratórios) e turno (diurno ou noturno), eliminando a necessidade de comunicados impressos a cada alteração. Com isso, o sistema promove maior praticidade, agilidade e organização na divulgação dos horários.
+            </p>
+            <div class="footer">
+              <span>2025</span>
+              <span>Saber mais</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- === Contato === -->
+    <section id="contato" class="contact">
+      <h2 class="font-supreme-bold">Fale Comigo</h2>
+      <p>
+        Deseja trabalhar comigo ou tem uma ideia para ser desenvolvida? Entre em
+        contato.
+      </p>
+
+      <form action="https://formsubmit.co/eduardo.silvamachado07@gmail.com" method="POST">
+        <!-- Escondido: evita captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Seu nome" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+        </div>
+
+        <input type="text" name="subject" placeholder="Assunto" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Mensagem"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
